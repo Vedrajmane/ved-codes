@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LUXURY MENU</title>
+    <style>
+        body
+        {
+            background-color: #ffd700;
+        }
+        
+    .header {
+      text-align: center;
+      padding: 50px 0;
+      background-color: #ff6f61;
+      color: #fff;
+    }
+    .header h2{
+        color: #0d5b07;
+    }
+
+    h1 {
+      font-size: 48px;
+      margin: 0;
+    }
+      .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.pizza {
+    margin: 20px;
+    padding: 20px;
+    border: 4px solid black;
+    border-radius: 10px;
+    text-align: center;
+    width: 200px;
+    box-shadow: 7px 7px 7px black;
+}
+
+.pizza img {
+    width: 170px;
+    height: 170px;
+    box-shadow: 3px 3px 3px black;
+    border-radius: 3px;
+    margin-bottom: 10px;
+}
+
+.pizza h2 {
+    font-size: 1.2em;
+    margin-bottom: 10px;
+}
+
+.pizza select {
+    margin-bottom: 10px;
+}
+
+.pizza button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pizza button:hover {
+    background-color: #45a049;
+}
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1> BEAST CARS</h1>
+        <hr>
+        <h2>: : LUXURY CARS SECTION  : : </h2>
+      </div>
+
+    <div class="container">
+        <div class="pizza">
+            <img src="https://images.unsplash.com/photo-1599912027611-484b9fc447af?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nnx8bHV4dXJ5JTIwY2FyfGVufDB8fDB8fHww" alt="Pizza 1">
+            <h2>ROLLS ROYCE</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+               
+            </select>
+            
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+     
+        <div class="pizza">
+            <img src="https://s1.cdn.autoevolution.com/images/news/widebody-tesla-cybertruck-also-looks-like-jawa-sandcrawler-139312_1.jpg">
+            <h2> TESLA CYBER TRUCK</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+            </select>
+            
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+        <div class="pizza">
+            <img src="https://img.etimg.com/thumb/width-640,height-480,imgsize-43090,resizemode-75,msid-88645345/industry/auto/cars-uvs/lamborghini-looks-to-deliver-consistent-growth-in-india-during-2022/untitled-15.jpg" alt="Pizza 2">
+            <h2>LAMBORGINI</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+                
+            </select>
+          
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+        <div class="pizza">
+            <img src="https://w0.peakpx.com/wallpaper/850/31/HD-wallpaper-bentley-auto-black-cars-challenger-charger-thumbnail.jpg" alt="Pizza 2">
+            <h2>BENTLY</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+            </select>
+            
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+        <div class="pizza">
+            <img src="https://vehicle-images.dealerinspire.com/727a-110009920/W1KWJ6EBXPG122795/c92da945cb7d734d1dbc945dad137dcb.jpg" alt="Pizza 2">
+            <h2>MERCEDES C-CLASS</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+            </select>
+          
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+        <div class="pizza">
+            <img src="data:image/jpeg;base64,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" alt="Pizza 2">
+            <h2>FERRARI</h2>
+            <select name="size">
+                <option value="v1">Type - Price</option>
+                <option value="small">HYBRID = 10CR</option>
+                <option value="medium">EV    =  8CR</option>
+            </select>
+           
+            <button onclick="orderPlaced()">Order Now</button>
+        </div>
+       
+    </div>
+    <script>
+        function orderPlaced() {
+            alert("Your order has been placed!");
+        }
+    </script>
+</body>
+</html>
